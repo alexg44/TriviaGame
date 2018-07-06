@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Trivia Game</title>
+          <!-- Bootstrap File -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- CSS Stylesheet File -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+    </head>
+
+    <!-- Body tag & background image -->
+    <body background="assets/images/90's Background.jpg">
+        <div class="container" align="center">
+            <div class="startBtn"></div>
+            <div class="row">
+                <div class="col-md-12" id="columnOne" align="center">
+                    <h1>90'S Trivia!</h1>
+                    <h3>Time Remaining: </h3>
+                    <br/ >
+                    <!-- Beginning of Quiz Form -->
+                    <h3>What is the name of the judge that presided over OJ Simpson's trial?</h3>
+                    <form class="Q1" value="Ito">
+                        <input id="true" type="radio" name="judge" value="Ito"> Ito </input>
+                        <input id="false" type="radio" name="judge" value="Kato"> Kato </input> 
+                        <input id="false" type="radio" name="judge" value="Judy"> Judy </input> 
+                    </form>
+                    <br />
+                    <h3>Rap was just becoming well known in the 90s. Which artist had the first number one rap single?</h3>
+                    <form class="Q2" value="Vanilla Ice">
+                        <input id="false" type="radio" name="rapper" value="Notorious BIG"> Notorious BIG </input>
+                        <input id="true" type="radio" name="rapper" value="Vanilla Ice"> Vanilla Ice </input>
+                        <input id="false" type="radio" name="rapper" value="Missy Elliot"> Missy Elliot </input>
+                    </form>
+                    <br />
+                    <h3>This fad of the '90s was like a purse carried on your waist.</h3>
+                    <form class="Q3" value="Fanny Pack">
+                        <input id="true" type="radio" name="waist" value="Fanny Pack"> Fanny pack </input>
+                        <input id="false" type="radio" name="waist" value="Clutch"> Clutch </input>
+                        <input id="false" type="radio" name="waist" value="Murse"> Murse </input>
+                    </form>
+                    <br />
+                    <h3>Which 90s TV show features characters with the name Tommy, Zack, Kimberly, Billy, and Trini?</h3>
+                    <form class="Q4" value="Power Rangers">
+                        <input id="false" type="radio" name="TV" value="Teenage Mutant Ninja Turtles"> Teenage Mutant Ninja Turtles </input>
+                        <input id="false" type="radio" name="TV" value="Thunder Cats"> Thunder Cats </input>
+                        <input id="true" type="radio" name="TV" value="Power Rangers"> The Mighty Morphin Power Rangers </input>
+                    </form>
+                    <br />
+                    <h3>In 1992, the Toronto Blue Jays became the first Canadian professional sports team to win what?</h3>
+                    <form Class="Q5" value="World Series">
+                        <input id="false" type="radio" name="Baseball" value="NBA"> NBA Finals </input>
+                        <input id="true" type="radio" name="Baseball" value="World Series"> World Series </input>
+                        <input id="false" type="radio" name="Baseball" value="World Cup"> World Cup </input>
+                    </form>
+                    <br />
+                    <input id="submit" type="submit" name="submit" value="Submit"> 
+                    <input id="reset" type="reset" value="Reset" onClick="document.location.reload(true)">
+                    <br />
+
+                    <!-- Scoreboard / Count -->
+                    <div class="count">
+                        <p id="correct">Correct: </p>
+                        <p id="incorrect">Incorrect: </p>
+                        <p id="unanswered">Unanswered: </p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <!-- JavaScript File Link -->
+        <script type="text/javascript" src="assets/javascript/app.js"></script> 
+    </body>
+</html>
